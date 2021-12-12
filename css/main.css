@@ -1,0 +1,178 @@
+/* 스킵네비게이션 */
+#skip { position: relative}
+#skip a { width: 200px; line-height: 35px; text-align: center; color: #fff; position: absolute; left: 0; top: -100px; border: 1px solid #fff; background: #333;}
+#skip a:active,#skip a:focus { top: 0}
+
+/* 비주얼 영역 시작 */
+.visual {z-index:-1;margin-top:120px;background-image:url("../images/visual_bg.jpg");background-position:center;}
+.visual .inner {height:646px;}
+
+.visual .title {position: absolute;top:88px;left:-10px;}
+.visual .title .btn {position: absolute;top:259px;left:173px;}
+
+.visual .cup1.image {position: absolute;bottom:0;right:-47px;}
+.visual .cup1.text {position: absolute;top:38px;right:171px;}
+
+.visual .cup2.image {position: absolute;bottom:0;right:162px;}
+.visual .cup2.text {position: absolute;top:321px;right:416px;}
+
+.visual .spoon {position:absolute;left:275px;bottom:0;}
+.visual .fade-in {opacity:0;}
+/* 비주얼 영역 끝 */
+
+
+/* 공지사항 슬라이더, 토글 버튼 끝 */
+/*.notice {}*/
+.notice .notice-line {position: relative;}
+.notice .notice-line .bg-left {position: absolute;top:0;left:0;width: 50%;height:100%;background-color: #333;}
+.notice .notice-line .bg-right {position: absolute;top:0;right:0;width: 50%;height:100%;background-color: #f6f5ef;}
+.notice .notice-line .inner {display:flex;height:62px;}
+
+.notice .notice-line .inner .inner__left {display:flex;width: 60%;height: 100%;background-color: #333;align-items: center;}
+.notice .notice-line .inner .inner__left h2 {color:#fff;font-size: 17px;font-weight: 700;margin-right:20px;}
+.notice .notice-line .inner .inner__left .swiper-container {flex-grow:1;height:62px;overflow:hidden;}
+.notice .notice-line .inner .inner__left .swiper-container .swiper-slide {height:62px;display:flex;align-items:center;}
+.notice .notice-line .inner .inner__left .swiper-container .swiper-slide a {color:#fff;}
+
+.notice .notice-line .inner .inner__left .notice-line__more {color:#fff;width:62px;height:62px;display:flex;justify-content: center;align-items: center;}
+.notice .notice-line .inner .inner__left .notice-line__more .material-icons {color:#fff;font-size: 30px;}
+
+.notice .notice-line .inner .inner__right {width:40%;height:100%;display:flex;justify-content:flex-end;align-items:center;}
+.notice .notice-line .inner .inner__right h2 {font-size:17px;font-weight:700;}
+
+.notice .notice-line .inner .inner__right .toggle-promotion {width: 62px;height:62px;cursor:pointer;display:flex;justify-content:center;align-items:center;}
+.notice .notice-line .inner .inner__right .toggle-promotion .material-icons {color:#333;font-size:30px;}
+/* 공지사항 슬라이더, 토글 버튼 끝 */
+
+
+/* 프로모션 시작 */
+.notice .promotion {position: relative;height:693px;background-color:#f6f5ef;transition:height 0.4s;overflow:hidden;}
+.notice .promotion .swiper-container{width:calc(819px * 3 + 20px);height:553px;position: absolute;top:40px;left:50%;margin-left:calc((819px * 3 + 20px) / -2);}
+.notice .promotion.hide {height:0;}
+
+.notice .promotion .swiper-slide {position: relative;opacity:0.5;transition:opacity 1s;}
+.notice .promotion .swiper-slide-active {opacity:1}
+.notice .promotion .swiper-slide .btn {position: absolute;bottom:0;left:0;right:0;margin:auto;}
+
+.notice .promotion .swiper-pagination {bottom:40px;left:0;right:0;margin:auto 0;}
+.notice .promotion .swiper-pagination .swiper-pagination-bullet {background-color:transparent;background-image:url("../images/promotion_slide_pager.png");width: 12px;height:12px;margin-right:6px;outline:none}
+.notice .promotion .swiper-pagination .swiper-pagination-bullet:last-child {margin-right:0;}
+.notice .promotion .swiper-pagination .swiper-pagination-bullet-active {background-image:url("../images/promotion_slide_pager_on.png")}
+
+.notice .promotion .swiper-prev,
+.notice .promotion .swiper-next {display:flex;justify-content:center;align-items:center;transition:.4s;width:42px;height:42px;border:2px solid #333;border-radius:50%;position:absolute;top:300px;z-index:1;cursor:pointer;outline:none;}
+.notice .promotion .swiper-prev {left:50%;margin-left:-480px;}
+.notice .promotion .swiper-next {right:50%;margin-right:-480px;}
+
+.notice .promotion .swiper-prev:hover,
+.notice .promotion .swiper-next:hover {background-color:#333;color:#fff;}
+/* 프로모션 끝 */
+
+
+/* 리워즈 시작 */
+.rewards  {position: relative;}
+.rewards .bg-left {position: absolute;top:0;left:0;width:50%;height:100%;background-color:#272727;}
+.rewards .bg-right {position: absolute;top:0;right:0;width:50%;height:100%;background-color:#d5c798;}
+.rewards .inner {background-image:url("../images/rewards.jpg");height:241px;}
+
+.rewards .btn-group {display:flex;flex-wrap:wrap;position:absolute;bottom:24px;right:0;width:250px;}
+.rewards .btn-group .btn.sign-up {margin-right:10px;}
+.rewards .btn-group .btn.sign-in {width:110px;}
+.rewards .btn-group .btn.gift {margin-top:10px;flex-grow:1;}
+/* 리워즈 끝 */
+
+
+/* 유튜브 영상 시작 */
+.youtube {position: relative;height:700px;overflow:hidden;background-color:#333;}
+.youtube .youtube__area { position:absolute;top:50%;left:50%;margin-top:calc(1920px * 9 / 16 / -2);margin-left:calc(1920px / -2) ;width:1920px;background-color: orange;}
+.youtube .youtube__area::before {content:"";display:block;width:100%;height:0;padding-top:56.25%;}
+
+.youtube .youtube__cover {position: absolute;top:0;left:0;width:100%;height:100%;background-image:url("../images/video_cover_pattern.png");background-color:rgba(0,0,0,0.3);}
+
+#player {width:100%;height:100%;position:absolute;top:0;left:0;}
+
+.youtube .inner{height: 700px;}
+.youtube .floating1{position: absolute;top:50px;left:0;}
+.youtube .floating2{position: absolute;top:350px;left:150px;}
+.youtube .floating3{position: absolute;bottom:-200px;right:0;}
+/* 유튜브 영상 끝 */
+
+
+/* 시즌 프로덕트 시작 */
+.season-product .floating3{position: absolute;top:-200px;right:0;}
+.season-product {position:relative;background-image:url("../images/season_product_bg.jpg");background-attachment:fixed;}
+.season-product .inner {height: 400px;}
+.season-product .inner .text-group {position: absolute;top:110px;right:110px;}
+.season-product .inner .text-group .title {margin-bottom: 10px;}
+.season-product .inner .text-group .description {margin-bottom: 15px;}
+/* 시즌 프로덕트 끝 */
+
+
+/* reserve-coffee 시작 */
+.reserve-coffee {background-image: url("../images/reserve_bg.jpg");}
+.reserve-coffee .inner {height:400px}
+.reserve-coffee .reserve-logo {position: absolute;top:110px;left:0;}
+.reserve-coffee .text-group {position: absolute;top:124px;left:208px;}
+.reserve-coffee .product {position: absolute;top:0;right:0;}
+/* reserve-coffee 끝 */
+
+
+/* pick-your-favorite 시작 */
+.pick-your-favorite {background-image: url("../images/favorite_bg.jpg");background-repeat:no-repeat;background-position:center;background-attachment:fixed;background-size:cover;}
+.pick-your-favorite .inner {padding:110px 0;}
+.pick-your-favorite .text-group {display:flex;flex-wrap:wrap;width: 362px;justify-content: flex-end;margin-left: 100px;}
+.pick-your-favorite .text-group .title {margin-bottom: 40px;}
+.pick-your-favorite .text-group .description {margin-bottom: 40px;}
+/* pick-your-favorite 끝*/
+
+
+/* reserve-store 시작 */
+.reserve-store {background-image: url("../images/reserve_store_bg.jpg");background-repeat:no-repeat;background-position:center;background-attachment:fixed;background-size:cover;}
+.reserve-store .inner {height: 600px;display:flex;justify-content: center;align-items:center;}
+
+.reserve-store .medal {width: 334px;height: 334px;perspective: 300px;}
+.reserve-store .medal .front,
+.reserve-store .medal .back {width: 334px;height: 334px;backface-visibility: hidden;transition:1s;position: absolute;}
+
+.reserve-store .medal .front {transform:rotateY(0);}
+.reserve-store .medal:hover .front {transform:rotateY(180deg);}
+
+.reserve-store .medal .back {transform:rotateY(-180deg);}
+.reserve-store .medal:hover .back {transform:rotateY(0);}
+.reserve-store .medal .back .btn {position: absolute;top:240px;left:0;right:0;margin:auto;}
+/* reserve-store 끝 */
+
+
+/* find-store 시작 */
+.find-store {background-image: url("../images/find_store_bg.jpg");}
+.find-store .inner {height: 400px;}
+.find-store .texture1 {position: absolute;top:0;left:400px;}
+.find-store .texture2 {position: absolute;bottom:0;right:0;}
+
+.find-store .picture {position: absolute;border-radius: 50%;box-shadow: 2px 2px 8px rgba(0,0,0,.5);}
+.find-store .picture1 {top:-60px;left:0;}
+.find-store .picture2 {top:150px;left:250px;}
+
+.find-store .text-group {position: absolute;top:120px;left:530px;}
+.find-store .text-group .title {margin-bottom: 20px;}
+.find-store .text-group .description {margin-bottom: 20px;}
+/* find-store 끝 */
+
+
+/* awards 시작 */
+.awards  {background-color:#272727;overflow: hidden;}
+.awards .inner {padding:40px 0;}
+.awards .swiper-container{width:100%;height:40px;overflow:hidden;}
+
+.awards .swiper-prev,
+.awards .swiper-next {width:42px;height:42px;border:2px solid #fff;border-radius: 50%;outline:none;color:#fff;opacity:.3;cursor:pointer;display:flex;justify-content:center;align-items:center;position:absolute;top:0;bottom:0;margin:auto;}
+
+.awards .swiper-prev {left:-100px;}
+.awards .swiper-next {right:-100px;}
+
+.awards .swiper-prev:hover,
+.awards .swiper-next:hover {background-color:#fff;color:#333;}
+/* awards 끝 */
+
+
+#to-top {width: 42px;height: 42px;background-color: #333;color:#fff;border:2px solid #fff;border-radius:10px;cursor:pointer;display:flex;justify-content: center;align-items: center;position:fixed;bottom:30px;right:30px;z-index:9;}
