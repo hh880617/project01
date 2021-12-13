@@ -2,15 +2,16 @@
 // 주메뉴 마우스오버 탭포커스
 $(document).ready(function(){  
   $(".item").bind('mouseenter focusin', function(){
-    $(this).find(".item__contents").stop().fadeIn();
+    $(this).children(".item__contents").stop().show();
     $(this).addClass("on").siblings().removeClass("on");
   });
-  $(".item").bind('mouseleave focusout', function(){
-    $(this).find(".item__contents").stop().fadeOut();
+  $(".item").on('mouseleave', function(){
+    $(this).children(".item__contents").stop().hide();
     $(this).removeClass("on");
   });
-  $('.item li:last a').on('focusout', function(){
-    $(this).parent('ul').stop().slideUp(200);
+  $(".item").on('focusout', function(){
+    $(this).children(".item__contents").stop().fadeOut();
+    $(this).removeClass("on");
   });
 });
 ////////////////////////////////////////////////////////////////
