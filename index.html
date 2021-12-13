@@ -24,13 +24,13 @@
   <link rel="icon" href="./favicon.ico" />
   <!--브라우저 스타일 초기화-->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css" />
-  <!--Google Fonts - 나눔고딕-->
+  <!--Google Fonts -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap">
   <!--Google Material Icons-->
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
   <link rel="stylesheet" href="./css/common.css" />
-  <link rel="stylesheet" href="./css/main.css" />
+  <link rel="stylesheet" href="./css/style.css" />
 </head>
 
 <body>
@@ -40,13 +40,11 @@
       <a href="#content_main">메인 콘텐츠 영역 바로가기</a>
       <a href="#content_footer">하단 콘텐츠 영역 바로가기</a>
     </div>
-    <div class="inner">
-      <!-- 로고 -->
+    <div class="inner">      
       <a href="/" class="logo">
         <h1><img src="./images/starbucks_logo.png" alt="Starbucks" /></h1>
       </a>
-
-      <!-- 서브 메뉴 -->
+      
       <div class="sub-menu">
         <ul class="menu">
           <li><a href="/project01/signin/index.html">Sign In</a></li>
@@ -60,7 +58,7 @@
         </div>
       </div>
 
-      <!-- 메인 메뉴 -->
+      
       <ul class="main-menu">
         <li class="item">
           <div class="item__name"><a href="/">COFFEE</a></div>
@@ -371,8 +369,7 @@
     </div>
   </header>
 
-  <main>
-    <!-- visual -->
+  <main>    
     <section id="content_main" class="visual">
       <h2 class="ir_su">비주얼 영역</h2>
       <div class="inner">
@@ -394,9 +391,7 @@
   
       </div>
     </section>
-    <!-- visual -->
-  
-    <!-- notice -->
+    
     <section class="notice">
       <div class="notice-line">
         <div class="bg-left"></div>
@@ -459,9 +454,7 @@
         </div>
       </div>
     </section>
-    <!-- notice -->
-  
-    <!-- rewards -->
+    
     <section class="rewards">
       <h2 class="ir_su">공지사항 영역</h2>
       <div class="bg-left"></div>
@@ -474,9 +467,7 @@
         </div>
       </div>
     </section>
-    <!-- rewards -->
-  
-    <!-- youtube video -->
+
     <section class="youtube">
       <h2 class="ir_su">유튜브 백그라운드 영역</h2>
       <div class="youtube__area">
@@ -488,38 +479,33 @@
         <img src="./images/floating2.png" alt="Icon" class="floating floating2" />
       </div>
     </section>
-    <!-- youtube video -->
-  
-    <!-- season product -->
+
     <section class="season-product scroll-spy">
       <h2 class="ir_su">계절 시즌원두 영역</h2>
       <img src="./images/floating3.png" alt="Icon" class="floating floating3" />
       <div class="inner">
-        <img src="./images/season_product_image.png" alt="" class="product back-to-position to-right delay-0" />
+        <img src="./images/season_product_image.png" alt="" class="product animate to-right delay-0" />
         <div class="text-group">
-          <img src="./images/season_product_text1.png" alt="" class="title back-to-position to-left delay-1" />
-          <img src="./images/season_product_text2.png" alt="" class="description back-to-position to-left delay-2" />
-          <div class="more back-to-position to-left delay-3">
+          <img src="./images/season_product_text1.png" alt="" class="title animate to-left delay-1" />
+          <img src="./images/season_product_text2.png" alt="" class="description animate to-left delay-2" />
+          <div class="more animate to-left delay-3">
             <a href="javascript:void(0)" class="btn">자세히 보기</a>
           </div>
         </div>
   
       </div>
     </section>
-    <!-- season product -->
-  
-    <!-- reserve-coffee -->
     <section class="reserve-coffee scroll-spy">
       <h2 class="ir_su">리저브 커피 영역</h2>
       <div class="inner">
-        <img src="./images/reserve_logo.png" alt="" class="reserve-logo back-to-position to-right delay-0">
+        <img src="./images/reserve_logo.png" alt="" class="reserve-logo animate to-right delay-0">
         <div class="text-group">
-          <img src="./images/reserve_text.png" alt="" class="description back-to-position to-right delay-1" />
+          <img src="./images/reserve_text.png" alt="" class="description animate to-right delay-1" />
           <div class="more">
-            <a href="javascript:void(0)" class="btn btn--gold back-to-position to-right delay-2">자세히 보기</a>
+            <a href="javascript:void(0)" class="btn btn--gold animate to-right delay-2">자세히 보기</a>
           </div>
         </div>
-        <img src="./images/reserve_image.png" alt="" class="product back-to-position to-left delay-3">
+        <img src="./images/reserve_image.png" alt="" class="product animate to-left delay-3">
       </div>
     </section>
     <!-- reserve-coffee -->
@@ -529,10 +515,10 @@
       <h2 class="ir_su">PICK YOUR FAVORITE 영역</h2>
       <div class="inner">
         <div class="text-group">
-          <img src="./images/favorite_text1.png" alt="" class="title back-to-position to-right delay-0" />
-          <img src="./images/favorite_text2.png" alt="" class="description back-to-position to-right delay-1" />
+          <img src="./images/favorite_text1.png" alt="" class="title animate to-right delay-0" />
+          <img src="./images/favorite_text2.png" alt="" class="description animate to-right delay-1" />
           <div class="more">
-            <a href="javascript:void(0)" class="btn btn--white back-to-position to-right delay-2">자세히 보기</a>
+            <a href="javascript:void(0)" class="btn btn--white animate to-right delay-2">자세히 보기</a>
           </div>
         </div>
       </div>
@@ -562,13 +548,13 @@
       <div class="inner">
         <img src="./images/find_store_texture1.png" alt="" class="texture1" />
         <img src="./images/find_store_texture2.png" alt="" class="texture2" />
-        <img src="./images/find_store_picture1.jpg" alt="" class="picture picture1 back-to-position to-right delay-0" />
-        <img src="./images/find_store_picture2.jpg" alt="" class="picture picture2 back-to-position to-right delay-1" />
+        <img src="./images/find_store_picture1.jpg" alt="" class="picture picture1 animate to-right delay-0" />
+        <img src="./images/find_store_picture2.jpg" alt="" class="picture picture2 animate to-right delay-1" />
   
         <div class="text-group">
-          <img src="./images/find_store_text1.png" alt="" class="title back-to-position to-left delay-0" />
-          <img src="./images/find_store_text2.png" alt="" class="description back-to-position to-left delay-1" />
-          <div class="more back-to-position to-left delay-2">
+          <img src="./images/find_store_text1.png" alt="" class="title animate to-left delay-0" />
+          <img src="./images/find_store_text2.png" alt="" class="description animate to-left delay-1" />
+          <div class="more animate to-left delay-2">
             <a href="javascript:void(0)" class="btn">매장찾기</a>
           </div>
         </div>
